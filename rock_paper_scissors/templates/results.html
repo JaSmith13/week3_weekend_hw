@@ -3,9 +3,10 @@
 {% block content %}
 
 <h3>The results are in!</h3>
-<br>
-<p>Player 1 picked {{ player1_choice }}!</p>
-<p>Player 2 picked {{ player2_choice }}!</p>
+<p>
+    Player 1 picked {{ player1_choice }}!<br>
+    Player 2 picked {{ player2_choice }}!
+</p>
 
 {% if winner == None %}
     <p>The game was a Draw!</p>
@@ -13,4 +14,5 @@
     <p>The winner was {{ winner }}</p>
 {% endif %}
 
+<a href="/">Back to Rules</a>
 {% endblock %}
