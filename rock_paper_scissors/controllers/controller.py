@@ -15,3 +15,5 @@ def display_winner(player1_choice, player2_choice):
     winner = Game.decide_result(Game, player1, player2)
     return render_template("results.html", winner = winner, player1_choice = player1.choice, player2_choice = player2.choice)
     #return winner
+
+@app.route('/play')

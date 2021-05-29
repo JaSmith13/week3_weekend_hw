@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #e9897e;
+    color:whitesmoke;   
+    padding: 10px; 
+    padding-left: 15px;
+}
+
+header > h1{
+    margin-top: 0;
+    /* padding: 10px ; */
+}
+
+main{
+    padding: 15px
+}
+
+a{
+    font-size: smaller;
+    padding:5px;
+    text-decoration: none;
+    color: black;
+    border: 3px solid rgb(66, 65, 65);
+    border-radius: 10px;
+}
+
+a:hover{
+    transition-duration: 0.3s;
+    background-color: dimgrey;
+}
+
+
+footer{
+    display: flex;
+    background-color: #e9897e;
+    color: whitesmoke;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+h4{
+    margin: 10px;
+}
+
