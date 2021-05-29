@@ -6,6 +6,8 @@ class TestGame(unittest.TestCase):
 
     def setUp(self):
         self.game = Game()
+        self.player1 = Player("Jack", "paper")
+        self.player2 = Player("Meg", "rock")
         
     #attribute tests 
     def test_rules__rock_beats_scissors(self):
@@ -18,18 +20,6 @@ class TestGame(unittest.TestCase):
         self.assertEqual("paper", self.game.rules["scissors"])
 
 
-    # method tests
-    def test_method_decide_result_returns_correct_result___rock_wins(self):
-        self.assertEqual("rock", self.game.decide_result("rock", "scissors"))
-
-    def test_method_decide_result_returns_correct_result___draw(self):
-        self.assertEqual("rock", self.game.decide_result("rock", "rock"))
-
-    def test_method_decide_result_returns_correct_result___rock_loses(self):
-        self.assertEqual("paper", self.game.decide_result("rock", "paper"))
-
-    
-    def test_method_can_take_player_choice(self):
-        self.player1 = Player("Jack", "paper")
-        self.player2 = Player("Meg", "rock")
-        self.assertEqual("paper", self.game.decide_result(self.player1.choice, self.player2.choice))
+    # method tests    
+    def test_method_can_take_player_choice(self):       
+        self.assertEqual("paper", self.game.decide_result(self.player1, self.player2))

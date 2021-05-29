@@ -6,3 +6,7 @@ from app import app
 @app.route('/')
 def index():
     return render_template('index.html', title='Rock, Paper, Scissors')
+
+# @app.route('/<player1_choice>/<player2_choice>')
+# def display_winner(player1_choice, player2_choice):
+    
