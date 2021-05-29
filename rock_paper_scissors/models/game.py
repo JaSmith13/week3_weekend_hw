@@ -1,3 +1,5 @@
+import random
+from models.player import Player
 
 class Game:
 
@@ -14,3 +16,9 @@ class Game:
         if player2.choice in rules[player1.choice]:
             return player1.choice
         return player2.choice
+
+    def decide_vs_cpu(self, player1):
+
+        cpu_options = ["rock", "paper", "scissors"]
+        cpu_player = Player("cpu", random.choice(cpu_options))
+        self.decide_result(player1, cpu_player)

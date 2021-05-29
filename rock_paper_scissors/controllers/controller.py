@@ -17,3 +17,5 @@ def display_winner(player1_choice, player2_choice):
     #return winner
 
 @app.route('/play')
+def play_vs_cpu():
+    pass
