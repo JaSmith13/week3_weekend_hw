@@ -7,6 +7,7 @@ class TestPlayer(unittest.TestCase):
         self.player1 = Player('Scott', 'scissors')
         self.player2 = Player('Regina', 'rock')
 
+    # attribute tests
     def test_player_has_name(self):
         self.assertEqual('Scott', self.player1.name)
 
