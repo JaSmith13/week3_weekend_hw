@@ -9,11 +9,13 @@
 </head>
 <body>
     <header>
-        <h1>Rock, Paper, Scissors</h1>
-        <h2>Welcome to my rock, paper, scissors flask game.</h2>
+        <hgroup>
+            <h1>Rock, Paper, Scissors</h1>
+            <h2>Welcome to my rock, paper, scissors flask game.</h2>
+        </hgroup>
+        <a href="/play">Play against CPU</a><br>
     </header>   
-    <main>
-        <a href="/play">Play against cpu</a>
+    <main>  
         {% block content %}
         {% endblock %}
     </main>    

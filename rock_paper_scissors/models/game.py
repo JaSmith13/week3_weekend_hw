@@ -17,8 +17,8 @@ class Game:
             return player1.choice
         return player2.choice
 
-    def decide_vs_cpu(self, player1):
-
+    def create_cpu(self):
         cpu_options = ["rock", "paper", "scissors"]
-        cpu_player = Player("cpu", random.choice(cpu_options))
-        self.decide_result(player1, cpu_player)
+        cpu_player = Player("CPU", random.choice(cpu_options))
+        return cpu_player
+        
