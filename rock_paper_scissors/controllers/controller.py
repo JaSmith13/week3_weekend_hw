@@ -43,6 +43,12 @@ def play_vs_cpu():
         player2_choice = cpu_player.choice 
         )
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template(
+        "404.html",
+        title= "Woops!"
+    ), 404
 
 
 
