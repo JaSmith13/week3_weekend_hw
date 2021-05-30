@@ -1,15 +1,14 @@
 {% extends "index.html" %}
 
 {% block content %}
-{{ super() }}
+    {{ super() }}
 {% block error %}
-<h2>Woops! You need to pick a valid move, (Watch out, casing is important)</h2>
-<h3>Pick from:</h3>
-<ul>
-    <li>rock</li>
-    <li>paper</li>
-    <li>scissors</li>
-</ul>
+    <h2>Woops! You need to pick a valid move, (Watch out, casing is important)</h2>
+    <h3>Pick from:</h3>
+    <ul>
+        <li>rock</li>
+        <li>paper</li>
+        <li>scissors</li>
+    </ul>
 {% endblock %}
-
 {% endblock %}

@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
-    <title> {{ title }} </title>
-</head>
-<body>
-    <header>
-        <hgroup>
-            <h1>Rock, Paper, Scissors</h1>
-            <h2>Welcome to my rock, paper, scissors flask game.</h2>
-        </hgroup>
-        <a href="/play">Play against CPU</a><br>
-    </header>   
-    <main>  
-        {% block content %}
-        {% endblock %}
-    </main>    
-    <footer>
-        <h4>made by Aly Smith - e49 2021</h4>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/style.css">
+        <title> {{ title }} </title>
+    </head>
+    <body>
+        <header>
+            <hgroup>
+                <h1>Rock, Paper, Scissors</h1>
+                <h2>Welcome to my rock, paper, scissors flask game.</h2>
+            </hgroup>
+            <a href="/play">Play against CPU</a><br>
+        </header>   
+        <main>  
+            {% block content %}
+            {% endblock %}
+        </main>    
+        <footer>
+            <h4>made by Aly Smith - e49 2021</h4>
+        </footer>
+    </body>
 </html>

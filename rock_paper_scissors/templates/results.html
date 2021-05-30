@@ -2,17 +2,17 @@
 
 {% block content %}
 
-<h3>The results are in!</h3>
-<p>
-    {{player1_name}} picked {{ player1_choice }}!<br>
-    {{player2_name}} picked {{ player2_choice }}!
-</p>
+    <h3>The results are in!</h3>
+    <p>
+        {{player1_name}} picked {{ player1_choice }}!<br>
+        {{player2_name}} picked {{ player2_choice }}!
+    </p>
 
-{% if winner == None %}
-    <p>The game was a Draw!</p>
-{% else %}
-    <p>The winner was {{ winner }}</p>
-{% endif %}
+    {% if winner == None %}
+        <p>The game was a Draw!</p>
+    {% else %}
+        <p>The winner was {{ winner }}</p>
+    {% endif %}
 
-<a href="/">Back to Rules</a>
+    <a href="/">Back to Rules</a>
 {% endblock %}
